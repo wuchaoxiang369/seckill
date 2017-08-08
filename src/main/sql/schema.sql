@@ -40,4 +40,4 @@ CREATE TABLE success_killed(
 )ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='秒杀成功明细表';
 
 -- 连接数据库控制台
-mysql -uroot -proot
+mysql -u *** -p ***
