@@ -44,9 +44,10 @@
         <!-- 注入sqlSessionFactory -->
         <!-- 使用bean name的原因是 MapperScannerConfigurer启动的时候可能DataSource这样的资源还没有被加载
             使用bean name只有在使用mybatis的时候才会初始化 -->
+        <property name="basePackage" value="org.seckill.dao"/>
+
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
         <!-- 扫描DAO接口 -->
-        <property name="basePackage" value="org.seckill.dao"/>
     </bean>
 
     <!-- 自动注入redis dao -->
